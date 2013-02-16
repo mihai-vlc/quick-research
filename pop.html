@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title>Quick search</title>
+		<link rel="stylesheet" href="lib/jquery-ui.css" />
+		<script src="lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/autogrow.js" type="text/javascript"></script>
+		<script src="https://www.google.com/jsapi" type="text/javascript"></script>		
+		<script src="lib/jquery.gSearch-1.0.js" type="text/javascript"></script>		
+		<script src="lib/jquery.ySearch.js" type="text/javascript"></script>		
+		<script src="lib/jQuery.jQTubeUtil.min.js" type="text/javascript"></script>	
+		<script src="lib/jquery-ui.js" type="text/javascript"></script>			
+		<script src="lib/jquery.imgSearch.js" type="text/javascript"></script>			
+		<script src="lib/script.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			body{
+				min-width:480px;
+				min-height:480px;
+				font-size: 62.5%;
+
+			}
+			input {
+				border:2px solid #dadada;
+				border-radius:7px;
+				font-size:15px;
+				padding:5px;
+				background: url('search.png') no-repeat;
+				background-position: right;
+				margin-right: 50px;
+			}
+			input:focus { 
+				outline:none;
+				border-color:#9ecaed;
+				box-shadow:0 0 10px #9ecaed;
+			}	
+			.result {
+				padding: 4px;
+				margin: 4px;
+			}
+			.title {
+				font-size: 15px;
+			}
+			.title a {
+				color: blue;
+				font-size: 15px;
+			}
+			.url-cache, .url-cache a {
+				color: green;
+				font-size:small;
+			}
+			.snippet a {
+				font-size:small;
+				text-decoration:none;
+			}
+		</style>
+	</head>
+	<body>
+	
+	
+		<form id='search'>
+			<input type='text' id='q' placeholder='Search'> <span style='float:right;'><a href='#' id='popup'><img src='popup_icon.gif' title='popup'></a></span>
+		</form>
+		<div id="tabs">
+		  <ul>
+
+			<li><a href="#tabs-1">Google</a></li>
+			<li><a href="#tabs-2">Yahoo</a></li>
+			<li><a href="#tabs-3">YouTube</a></li>
+			<li><a href="#tabs-4">Images</a></li>
+		  </ul>
+
+		  <div id="tabs-1" class='content'>Type something in the search box</div>
+		  <div id="tabs-2" class='content'>Type something in the search box</div>
+		  <div id="tabs-3" class='content'>Type something in the search box</div>
+		  <div id="tabs-4" class='content'>Type something in the search box</div>
+		</div>
+<form target="_blank" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+		
+	</body>
+</html>
