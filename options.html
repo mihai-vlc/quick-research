@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title>Quick Research Settings</title>
+	<style type="text/css">
+		
+	body {
+		min-width: 500px;
+		background-color: #F7F7F9;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	h1 {
+		text-align: center;
+	}
+	input, select {
+		height: 25px;
+	}
+	a {
+		text-decoration: none;
+	}
+
+	.alert {
+		padding: 15px;
+		margin-bottom: 20px;
+		border: 1px solid rgba(0, 0, 0, 0);
+		border-radius: 4px;
+	}
+	.success {
+		text-align: center;
+		color: #468847;
+		background-color: #DFF0D8;
+		border-color: #D6E9C6;
+	}
+	.row {
+		padding: 10px;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.btn {
+		cursor: pointer;
+		display: inline-block;
+		padding: 6px 12px;
+		margin-bottom: 0;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 1.428571429;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		cursor: pointer;
+		border: 1px solid rgba(0, 0, 0, 0);
+		border-radius: 4px;
+		-webkit-user-select: none;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		color: #333;
+		background-color: #FFF;
+		border-color: #CCC;		
+	}
+	.btn:hover {
+		background-color: #EBEBEB;
+		border-color: #ADADAD;
+	}
+	.btn-p {
+		color: #fff;
+		background-color: #428BCA;
+		border-color: #357EBD;
+	}
+	.btn-p:hover {
+		background-color: #3276B1;
+		border-color: #285E8E;
+	}
+	.btn:active {
+		position:relative;
+		top:1px;
+	}
+	</style>
+</head>
+<body>
+	<h1>Quick Research Settings</h1>
+	<div id="status" class="alert success hidden"></div>
+	
+	<fieldset class="row">
+		<legend>When click on icon:</legend>
+		<select id="open">
+			<option value="0">Open default popup</option>
+			<option value="1">Open new window</option>
+		</select><br/>
+		<small>Requires browser restart to be updated.</small>
+	</fieldset>
+
+
+
+	<br/>
+	<a href="#" class="btn btn-p" id="save">Save</a>	
+	<a href="pop.html" class="btn">Back</a>	
+
+	<br/>
+	<a class="btn btn-p" href="mailto:ionutvmi@gmail.com?Subject=Quick%20Research&body=Hello%20Mihai%2C%0AIt%20would%20be%20nice%20if%20you%20could%20add%20in%20quick%20research%20as%20a%20search%20engine%3A%20google.com%0A%0AThank%20you%2C%0AYour%20name%20" target="_blank">
+		Add search engine
+	</a>
+
+	<script src="lib/options.js"></script>
+
+</body>
+</html>
