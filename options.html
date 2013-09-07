@@ -76,6 +76,10 @@
 		position:relative;
 		top:1px;
 	}
+
+	input[type=checkbox] {
+		vertical-align: middle;
+	}
 	</style>
 </head>
 <body>
@@ -91,7 +95,14 @@
 		<small>Requires browser restart to be updated.</small>
 	</fieldset>
 
-
+	<fieldset>
+		<legend>Active Tabs</legend>
+		<input type="checkbox" class="tabs" id="tab0" value="0"> <label for="tab0">Google</label> <br/>
+		<input type="checkbox" class="tabs" id="tab1" value="1"> <label for="tab1">Yahoo</label> <br/>
+		<input type="checkbox" class="tabs" id="tab2" value="2"> <label for="tab2">Youtube</label> <br/>
+		<input type="checkbox" class="tabs" id="tab3" value="3"> <label for="tab3">Images</label> <br/>
+		<input type="checkbox" class="tabs" id="tab4" value="4"> <label for="tab4">Translate</label> <br/>
+	</fieldset>
 
 	<br/>
 	<a href="#" class="btn btn-p" id="save">Save</a>	
